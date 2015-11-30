@@ -40,12 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EaminationRoom.cs" />
+    <Compile Include="ExaminationRoom.cs" />
     <Compile Include="Frontdesk.cs" />
     <Compile Include="OperatingRoom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room.cs" />
     <Compile Include="WaitingRoom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Personnel\Personnel.csproj">
+      <Project>{cfdccf10-bd9b-44b8-906a-c3e816f6fa5b}</Project>
+      <Name>Personnel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
