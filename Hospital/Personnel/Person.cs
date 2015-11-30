@@ -8,5 +8,31 @@ namespace Personnel
 {
     public abstract class Person
     {
-    }
+
+        Person.name = name;
+        Person.DOB = DOB;
+        Person.SSN = SSN;
+
+        string void talk();
+        {
+
+        }
+    
+        throw new NotImplementedException
+
+        string void listen();
+        {
+
+        }
+        throw new NotImplementedException
+
+
+
+        
+
+
+
+
+    
+
 }
