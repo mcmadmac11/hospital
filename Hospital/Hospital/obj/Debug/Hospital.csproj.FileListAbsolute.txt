@@ -1,1 +1,0 @@
-c:\users\dan\documents\visual studio 2015\Projects\Hospital\Hospital\bin\Debug\Hospital.exe.config
