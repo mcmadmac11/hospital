@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Structure
 {
-    public class Class1
+    public class Frontdesk
     {
+
     }
 }
