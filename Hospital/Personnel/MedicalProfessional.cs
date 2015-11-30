@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Personnel
 {
-    class MedicalProfessional
+    class MedicalProfessional : Person
     {
+
+
+
     }
 }

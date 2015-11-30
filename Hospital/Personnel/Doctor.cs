@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Personnel
 {
-    class Doctor
+    class Doctor : MedicalProfessional
     {
+        private string Prescribe(string...);{  }            
+        
+            throw new NotImplementedException
+
+        private string Diagnose(string);{  } 
+            throw new NotImplementedException
     }
+
 }

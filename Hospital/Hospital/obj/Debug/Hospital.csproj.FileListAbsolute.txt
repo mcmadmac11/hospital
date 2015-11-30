@@ -9,3 +9,5 @@ C:\Users\chris\Github\hospital\Hospital\Hospital\obj\Debug\Hospital.pdb
 =======
 C:\Users\Dan\Documents\GitRepos\hospital\Hospital\Hospital\bin\Debug\Hospital.exe.config
 >>>>>>> b7ea726d080586b35cc36b1bfe58ef14af60cc50
+C:\Users\Dan\Documents\GitRepos\hospital\Hospital\Hospital\obj\Debug\Hospital.exe
+C:\Users\Dan\Documents\GitRepos\hospital\Hospital\Hospital\obj\Debug\Hospital.pdb

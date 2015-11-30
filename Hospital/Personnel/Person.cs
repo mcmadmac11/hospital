@@ -9,20 +9,38 @@ namespace Personnel
     abstract class Person
     {
 
-        Person.name = name;
-        Person.DOB = DOB;
-        Person.SSN = SSN;
+        private string name = name;
+        private string DOB = DOB;
+        private string SSN = SSN;
 
-        string void talk();
+        public string Talk(string question)
         {
+            string answer = null;
+            switch (question)
+            {
+                case name:
+                    Console.WriteLine(name);
+                    answer = name;
+                    break;
+                case DOB:
+                    Console.WriteLine(DOB);
+                    answer = DOB;
+                    break;
+                case SSN:
+                    Console.WriteLine(SSN);
+                    answer = SSN;
+                    break;
+            }
+
+            return answer;
 
         }
     
         throw new NotImplementedException
 
-        string void listen();
+        public void Listen(string words)
         {
-
+            Talk(words);
         }
         throw new NotImplementedException
 
