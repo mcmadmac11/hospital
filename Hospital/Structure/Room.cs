@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Structure
 {
-    class Room
+    abstract class Room
     {
+        protected bool occupied;
+        public List<Person> occupants;
+
+        protected Room()
+        {
+            occupants = new List<dynamic>();
+        }
+
+        protected void AddOccupant(Person occupant)
+        {
+            occupants.Add(occupants);
+        }
     }
 }

@@ -1,2 +1,7 @@
 c:\users\dan\documents\visual studio 2015\Projects\Hospital\Hospital\bin\Debug\Hospital.exe.config
 C:\Users\chris\Github\hospital\Hospital\Hospital\bin\Debug\Hospital.exe.config
+C:\Users\chris\Github\hospital\Hospital\Hospital\bin\Debug\Hospital.exe
+C:\Users\chris\Github\hospital\Hospital\Hospital\bin\Debug\Hospital.pdb
+C:\Users\chris\Github\hospital\Hospital\Hospital\obj\Debug\Hospital.csprojResolveAssemblyReference.cache
+C:\Users\chris\Github\hospital\Hospital\Hospital\obj\Debug\Hospital.exe
+C:\Users\chris\Github\hospital\Hospital\Hospital\obj\Debug\Hospital.pdb
