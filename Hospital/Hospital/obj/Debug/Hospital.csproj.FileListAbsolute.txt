@@ -1,1 +1,2 @@
 c:\users\dan\documents\visual studio 2015\Projects\Hospital\Hospital\bin\Debug\Hospital.exe.config
+C:\Users\chris\Github\hospital\Hospital\Hospital\bin\Debug\Hospital.exe.config
