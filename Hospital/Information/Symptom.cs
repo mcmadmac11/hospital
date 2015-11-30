@@ -8,5 +8,13 @@ namespace Information
 {
     class Symptom
     {
+        private string title;
+        private string description;
+
+        public Symptom(string title, string description)
+        {
+            this.title = title;
+            this.description = description;
+        }
     }
 }

@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Ailment.cs" />
     <Compile Include="Appointment.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Diagnosis.cs" />
     <Compile Include="Insurance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
