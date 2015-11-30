@@ -13,7 +13,7 @@ namespace Structure
 
         protected Room()
         {
-            occupants = new List<dynamic>();
+            occupants = new List<Person>();
         }
 
         protected void AddOccupant(Person occupant)
