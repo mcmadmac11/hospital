@@ -15,8 +15,8 @@ namespace Information
         public Ailment(string name)
         {
             nameOfAilment = name;
-            symptoms = new List<Symptom>;
-            treatments = new List<Treatment>;
+            symptoms = new List<Symptom>();
+            treatments = new List<Treatment>();
         }
 
         public void UpdateSymptom(Symptom symptom)
