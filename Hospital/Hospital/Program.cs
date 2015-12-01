@@ -10,6 +10,7 @@ namespace Hospital
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("No bugs!");
         }
     }
 }

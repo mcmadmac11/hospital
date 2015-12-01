@@ -3,17 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Information;
 
 namespace Personnel
 {
-    class Doctor : MedicalProfessional
+    public class Doctor : MedicalProfessional
     {
-        private string Prescribe(string...);{  }            
+        public Doctor(string name, string DOB, string SSN) : base(name, DOB,SSN) { }
+        private Diagnosis Prescribe(Diagnosis diagnosis)
+        {
+            //doctor chooses a aingle treatment and instantiates the diagnosis with the ailment and that specific treatment
+            var treatment = ChooseTreatment(diagnosis);
+            diagnosis.updateTreatment(treatment);
+            return diagnosis;
+        }         
         
-            throw new NotImplementedException
+        public Diagnosis Diagnose(List<Symptom> symptoms)
+        {
+            ///check symptoms against ailment dictionary
+            //ailment with the most symptoms == diagnosed ailment
+            Ailment ailment = null; //placeholder
+            var diagnosis = new Diagnosis();
+            diagnosis.UpdateAilment(ailment);
+            return diagnosis;
+        }
 
-        private string Diagnose(string);{  } 
-            throw new NotImplementedException
+        private Treatment ChooseTreatment(Diagnosis diagnosis)
+        {
+            var potentialTreatments = diagnosis.ailment.treatments;
+            //choice logic
+            var treatment = potentialTreatments[0];
+            return treatment;
+        }
     }
 
 }

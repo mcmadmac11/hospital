@@ -1,0 +1,9 @@
+C:\Users\chris\Github\hospital\Hospital\Structure\obj\Debug\Structure.csprojResolveAssemblyReference.cache
+C:\Users\chris\Github\hospital\Hospital\Structure\bin\Debug\Structure.dll
+C:\Users\chris\Github\hospital\Hospital\Structure\bin\Debug\Structure.pdb
+C:\Users\chris\Github\hospital\Hospital\Structure\bin\Debug\Personnel.dll
+C:\Users\chris\Github\hospital\Hospital\Structure\bin\Debug\Information.dll
+C:\Users\chris\Github\hospital\Hospital\Structure\bin\Debug\Personnel.pdb
+C:\Users\chris\Github\hospital\Hospital\Structure\bin\Debug\Information.pdb
+C:\Users\chris\Github\hospital\Hospital\Structure\obj\Debug\Structure.dll
+C:\Users\chris\Github\hospital\Hospital\Structure\obj\Debug\Structure.pdb

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Information
 {
-    class Treatment
+    public class Treatment
     {
         private string nameOfTreatment;
         private string info;

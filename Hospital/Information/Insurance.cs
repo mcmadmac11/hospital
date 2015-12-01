@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Information
 {
-    class Insurance
+    public class Insurance
     {
         public Dictionary<string, string> insuranceInfo { get; private set; }
 
@@ -29,6 +29,5 @@ namespace Information
                ,{ "provider", null }
             };
         }
-
     }
 }

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Information
 {
-    class Ailment
+    public class Ailment
     {
         private string nameOfAilment;
         private List<Symptom> symptoms;
-        private List<Treatment> treatments;
+        public List<Treatment> treatments { get; private set; }
 
         public Ailment(string name)
         {
@@ -28,7 +28,5 @@ namespace Information
         {
             treatments.Add(treatment);
         }
-
-
     }
 }

@@ -6,15 +6,21 @@ using System.Threading.Tasks;
 
 namespace Information
 {
-    class Diagnosis
+    public class Diagnosis
     {
-        Ailment ailment;
-        Treatment treatment;
+        public Ailment ailment { get; private set; }
+        public Treatment treatment { get; private set; }
 
-        public Diagnosis(Ailment ailment, Treatment treatment)
+        public Diagnosis() { }
+
+        public void updateTreatment(Treatment treatment)
+        {
+            this.treatment = treatment;
+        }
+
+        public void UpdateAilment(Ailment ailment)
         {
             this.ailment = ailment;
-            this.treatment = treatment;
         }
     }
 }

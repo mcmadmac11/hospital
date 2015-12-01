@@ -24,9 +24,11 @@ namespace Structure
 
         public void RemoveOccupant(Person person)
         {
+            var personName = person.Talk("name");
             foreach (Person occupant in occupants)
             {
-                if (person.name == occupant.name)
+                var occupantName = occupant.Talk("name");
+                if (personName == occupantName)
                 {
                     //may error out since iterating mid list.
                     //other option is:

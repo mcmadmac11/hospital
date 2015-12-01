@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 using Information;
 namespace Personnel
 {
-    class Patient : Person
+    public class Patient : Person
     {
+        private bool hasInsurance { get; set; }
 
-        private Insurance insurance;
-        public bool HasInsurance { get; set; }
-
-
+        public Patient(string name, string DOB, string SSN, Insurance insurance) : base (name, DOB, SSN, insurance) { }
     }
 
 

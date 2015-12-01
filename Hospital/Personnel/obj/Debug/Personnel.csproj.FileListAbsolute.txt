@@ -1,0 +1,7 @@
+C:\Users\chris\Github\hospital\Hospital\Personnel\bin\Debug\Personnel.dll
+C:\Users\chris\Github\hospital\Hospital\Personnel\bin\Debug\Personnel.pdb
+C:\Users\chris\Github\hospital\Hospital\Personnel\bin\Debug\Information.dll
+C:\Users\chris\Github\hospital\Hospital\Personnel\bin\Debug\Information.pdb
+C:\Users\chris\Github\hospital\Hospital\Personnel\obj\Debug\Personnel.csprojResolveAssemblyReference.cache
+C:\Users\chris\Github\hospital\Hospital\Personnel\obj\Debug\Personnel.dll
+C:\Users\chris\Github\hospital\Hospital\Personnel\obj\Debug\Personnel.pdb

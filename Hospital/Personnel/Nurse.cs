@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Personnel
 {
-    class Nurse
+    public class Nurse : MedicalProfessional
     {
+        public Nurse (string name, string DOB, string SSN) : base (name, DOB, SSN) { }
     }
 }

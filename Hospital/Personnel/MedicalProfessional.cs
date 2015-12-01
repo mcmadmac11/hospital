@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace Personnel
 {
-
-    class MedicalProfessional : Person
-        
-    public class MedicalProfessional
-
+    public class MedicalProfessional : Person
     {
-
-
-
+        public MedicalProfessional(string name, string DOB, string SSN) : base(name, DOB, SSN) { }
     }
 }
