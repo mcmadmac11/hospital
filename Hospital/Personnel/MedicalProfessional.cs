@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Information;
 
 namespace Personnel
 {
-    public class MedicalProfessional : Person
+    public class MedicalProfessional : Person, IMedicalProfessional
     {
         public MedicalProfessional() : base() { }
     }

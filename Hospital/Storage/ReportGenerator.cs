@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Personnel;
+using Information;
 
 namespace Storage
 {
@@ -13,7 +14,10 @@ namespace Storage
 
         private class Report
         {
-            Patient patient;
+            private Patient patient;
+            private Dictionary<string, string> appointmentInfo;
+            private Diagnosis diagnosis;
+
 
             public Report() { }
         }

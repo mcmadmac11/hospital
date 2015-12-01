@@ -11,11 +11,11 @@ namespace Personnel
     {
         public Doctor() : base() { }
 
-        private Diagnosis Prescribe(Diagnosis diagnosis)
+        private Diagnosis Prescribe(DoctorDiagnosis diagnosis)
         {
             //doctor chooses a aingle treatment and instantiates the diagnosis with the ailment and that specific treatment
             var treatment = ChooseTreatment(diagnosis);
-            diagnosis.updateTreatment(treatment);
+            diagnosis.UpdateTreatment(this, treatment);
             return diagnosis;
         }         
         
@@ -24,17 +24,33 @@ namespace Personnel
             ///check symptoms against ailment dictionary
             //ailment with the most symptoms == diagnosed ailment
             Ailment ailment = null; //placeholder
-            var diagnosis = new Diagnosis();
-            diagnosis.UpdateAilment(ailment);
+            var diagnosis = new DoctorDiagnosis();
+            diagnosis.UpdateAilment(this, ailment);
             return diagnosis;
         }
 
-        private Treatment ChooseTreatment(Diagnosis diagnosis)
+        private Treatment ChooseTreatment(DoctorDiagnosis diagnosis)
         {
-            var potentialTreatments = diagnosis.ailment.treatments;
+            var ailment = diagnosis.GetAilment();
+            var potentialTreatments = diagnosis.GetAilment().treatments;
             //choice logic
             var treatment = potentialTreatments[0];
             return treatment;
+        }
+
+        private class DoctorDiagnosis : Diagnosis
+        {
+            public DoctorDiagnosis() { }
+
+            public override void UpdateTreatment(IMedicalProfessional doctor, Treatment treatment)
+            {
+                this.treatment = treatment;
+            }
+
+            public override void UpdateAilment(IMedicalProfessional doctor, Ailment ailment)
+            {
+                this.ailment = ailment;
+            }
         }
     }
 
