@@ -1,4 +1,0 @@
-C:\Users\chris\Github\hospital\Hospital\Information\bin\Debug\Information.dll
-C:\Users\chris\Github\hospital\Hospital\Information\bin\Debug\Information.pdb
-C:\Users\chris\Github\hospital\Hospital\Information\obj\Debug\Information.dll
-C:\Users\chris\Github\hospital\Hospital\Information\obj\Debug\Information.pdb
