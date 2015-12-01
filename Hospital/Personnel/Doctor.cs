@@ -9,7 +9,8 @@ namespace Personnel
 {
     public class Doctor : MedicalProfessional
     {
-        public Doctor(string name, string DOB, string SSN) : base(name, DOB,SSN) { }
+        public Doctor() : base() { }
+
         private Diagnosis Prescribe(Diagnosis diagnosis)
         {
             //doctor chooses a aingle treatment and instantiates the diagnosis with the ailment and that specific treatment

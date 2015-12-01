@@ -11,6 +11,5 @@ namespace Information
         dynamic Talk(string question);
 
         void Listen(string words);
-
     }
 }

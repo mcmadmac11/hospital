@@ -8,11 +8,8 @@ namespace Personnel
 {
     public class Patient : Person
     {
-        private bool hasInsurance { get; set; }
+        public bool hasInsurance;
 
-        public Patient(string name, string DOB, string SSN, Insurance insurance) : base (name, DOB, SSN, insurance) { }
+        public Patient() : base () { }
     }
-
-
-
 }       

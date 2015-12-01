@@ -14,11 +14,51 @@ namespace Personnel
         protected string SSN;
         protected Insurance insurance;
 
-        protected Person(string name, string DOB, string SSN, Insurance insurance = null)
+        protected Person()
+        {
+            this.name = null;
+            this.DOB = null;
+            this.SSN = null;
+            this.insurance = null;
+        }
+
+        public void SetInformation(string name, params dynamic[] info)
+        {
+            SetName(name);
+            for (int i=0; i < info.Length; i++)
+            {
+                switch (i)
+                {
+                    case 0:
+                        SetDOB(info[i]);
+                        break;
+                    case 1:
+                        setSSN(info[i]);
+                        break;
+                    case 2:
+                        setInsurance(info[i]);
+                        break;
+                }
+            }
+        }
+
+        private void SetName(string name)
         {
             this.name = name;
+        }
+
+        public void SetDOB(string DOB)
+        {
             this.DOB = DOB;
+        }
+
+        public void setSSN(string SSN)
+        {
             this.SSN = SSN;
+        }
+
+        public void setInsurance(Insurance insurance)
+        {
             this.insurance = insurance;
         }
 
@@ -28,15 +68,12 @@ namespace Personnel
             switch (question)
             {
                 case "name":
-                   // Console.WriteLine(name);
                     answer = name;
                     break;
                 case "dob":
-                   // Console.WriteLine(DOB);
                     answer = DOB;
                     break;
                 case "ssn":
-                   // Console.WriteLine(SSN);
                     answer = SSN;
                     break;
                 case "insurance":

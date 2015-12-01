@@ -11,3 +11,9 @@ C:\Users\Dan\Documents\GitRepos\hospital\Hospital\Hospital\bin\Debug\Hospital.ex
 >>>>>>> b7ea726d080586b35cc36b1bfe58ef14af60cc50
 C:\Users\Dan\Documents\GitRepos\hospital\Hospital\Hospital\obj\Debug\Hospital.exe
 C:\Users\Dan\Documents\GitRepos\hospital\Hospital\Hospital\obj\Debug\Hospital.pdb
+C:\Users\chris\Github\hospital\Hospital\Hospital\bin\Debug\Information.dll
+C:\Users\chris\Github\hospital\Hospital\Hospital\bin\Debug\Personnel.dll
+C:\Users\chris\Github\hospital\Hospital\Hospital\bin\Debug\Structure.dll
+C:\Users\chris\Github\hospital\Hospital\Hospital\bin\Debug\Information.pdb
+C:\Users\chris\Github\hospital\Hospital\Hospital\bin\Debug\Personnel.pdb
+C:\Users\chris\Github\hospital\Hospital\Hospital\bin\Debug\Structure.pdb

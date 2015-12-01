@@ -8,6 +8,6 @@ namespace Personnel
 {
     public class MedicalProfessional : Person
     {
-        public MedicalProfessional(string name, string DOB, string SSN) : base(name, DOB, SSN) { }
+        public MedicalProfessional() : base() { }
     }
 }

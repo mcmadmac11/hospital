@@ -7,19 +7,22 @@ using Personnel;
 
 namespace Structure
 {
-    abstract class Room
+    public abstract class Room
     {
         protected bool occupied;
-        public List<Person> occupants;
+        public List<Person> occupants { get; private set; }
 
         protected Room()
         {
             occupants = new List<Person>();
         }
 
-        public void AddOccupant(Person person)
+        public void AddOccupant(params Person[] persons)
         {
-            occupants.Add(person);
+            foreach (Person person in persons)
+            {
+                occupants.Add(person);
+            }
         }
 
         public void RemoveOccupant(Person person)

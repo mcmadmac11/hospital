@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Structure
 {
-    class WaitingRoom : Room
+    public class WaitingRoom : Room
     {
         public WaitingRoom() : base() { }
     }
