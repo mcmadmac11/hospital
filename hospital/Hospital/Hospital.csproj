@@ -58,6 +58,10 @@
       <Project>{cfdccf10-bd9b-44b8-906a-c3e816f6fa5b}</Project>
       <Name>Personnel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Storage\Storage.csproj">
+      <Project>{fc54e265-ce87-4e73-89d8-888322fc0cab}</Project>
+      <Name>Storage</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Structure\Structure.csproj">
       <Project>{f024d515-6cbf-4a78-b600-4ec4b44e885f}</Project>
       <Name>Structure</Name>

@@ -10,16 +10,9 @@ namespace Structure
     public class Frontdesk
     {
         private MedicalProfessional user;
-        private bool userVerified;
         public Frontdesk(MedicalProfessional user)
         {
             this.user = user;
-            userVerified = VerifyUser();
-        }
-
-        private bool VerifyUser()
-        {
-            return true;
         }
 
         public string Call(string phoneNumber)

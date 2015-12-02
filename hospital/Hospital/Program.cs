@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Personnel;
 using Structure;
 using Information;
+using Storage;
 
 namespace Hospital
 {
@@ -15,19 +16,28 @@ namespace Hospital
         {
             Console.WriteLine("No bugs!");
             WaitingRoom room = new WaitingRoom();
-            Patient p1 = new Patient();
-            p1.SetInformation("Sam", "09/01/1990", "none");
-            Patient p2 = new Patient();
-            p2.SetInformation("Jane", "sep1", "666");
-            room.AddOccupant(p1, p2); 
-            Console.WriteLine(room.occupants[0].name);
-            Console.WriteLine(room.occupants[1].name);
-            Console.WriteLine(room.occupants.Count());
-            var tester = (object)p1;
-            System.Xml.Serialization.XmlSerializer writer = new System.Xml.Serialization.XmlSerializer(tester.GetType());
-            System.IO.StreamWriter file = new System.IO.StreamWriter("C:\\Users\\chris\\github\\hospital\\Hospital\\Hospital\\test.xml");
-            writer.Serialize(file, tester);
-            file.Close();
+            var personFactory = new PersonFactory();
+          
+
+            var p1 = personFactory.CreatePatient("Sam", "09/02/1985");
+            var d1 = personFactory.CreateDoctor("Dr. Jim", "immortal");
+          
+            var appointment = new Appointment("12:00", "10/5/2016", p1, "R20", d1);
+            var diagnosis = "ebola";
+
+            var report = new ReportGenerator(p1, appointment.GetAppointmentInfo(), diagnosis).report;
+
+            Console.WriteLine(report.OutputPatient());
+            Console.WriteLine(report.OutputDiagnosis());
+            Console.WriteLine(report.OutputAppointmentInfo());
+
+            Database controller = new Database();
+
+            var reports = controller.ViewReports();
+            Console.WriteLine(reports.Count());
+            var rp = reports[0].OutputPatient();
+            Console.WriteLine(rp.Talk("name"));
+
 
         
         }

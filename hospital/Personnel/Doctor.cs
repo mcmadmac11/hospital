@@ -34,7 +34,7 @@ namespace Personnel
             var ailment = diagnosis.GetAilment();
             var potentialTreatments = diagnosis.GetAilment().treatments;
             //choice logic
-            var treatment = potentialTreatments[0];
+            var treatment = potentialTreatments[0]; //replace with logic
             return treatment;
         }
 

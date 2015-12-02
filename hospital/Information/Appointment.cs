@@ -25,6 +25,11 @@ namespace Information
             SetAppointmentInfo();
         }
 
+        public Dictionary<string, string> GetAppointmentInfo()
+        {
+            return appointmentInfo;
+        }
+
         private void SetAppointmentInfo()
         {
             appointmentInfo = new Dictionary<string, string>
