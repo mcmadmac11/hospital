@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Information", "Information\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "Storage\Storage.csproj", "{FC54E265-CE87-4E73-89D8-888322FC0CAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFgui", "WPFgui\WPFgui.csproj", "{33E167CC-5A74-48C5-9EC8-02616CC2B422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outlook", "Outlook\Outlook.csproj", "{159D60DB-E79C-405E-94D9-47958001F769}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{FC54E265-CE87-4E73-89D8-888322FC0CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC54E265-CE87-4E73-89D8-888322FC0CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC54E265-CE87-4E73-89D8-888322FC0CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E167CC-5A74-48C5-9EC8-02616CC2B422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E167CC-5A74-48C5-9EC8-02616CC2B422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E167CC-5A74-48C5-9EC8-02616CC2B422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E167CC-5A74-48C5-9EC8-02616CC2B422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{159D60DB-E79C-405E-94D9-47958001F769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159D60DB-E79C-405E-94D9-47958001F769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159D60DB-E79C-405E-94D9-47958001F769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{159D60DB-E79C-405E-94D9-47958001F769}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
