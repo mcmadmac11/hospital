@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FC54E265-CE87-4E73-89D8-888322FC0CAB}</ProjectGuid>
+    <ProjectGuid>{A4FD3CB4-AB6E-4C3E-B531-6FD392ED942A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Storage</RootNamespace>
-    <AssemblyName>Storage</AssemblyName>
+    <RootNamespace>Calendar</RootNamespace>
+    <AssemblyName>Calendar</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,54 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="OutlookCalendar" />
-    <Compile Include="Database.cs" />
-    <Compile Include="Report.cs" />
-    <Compile Include="ReportGenerator.cs" />
+    <Compile Include="Appointment.cs" />
+    <Compile Include="CalendarGenerator.cs" />
+    <Compile Include="MonthlySchedule.cs" />
+    <Compile Include="Period.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Information\Information.csproj">
-      <Project>{aaad7a64-810e-4c00-9495-9519db77af8f}</Project>
-      <Name>Information</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Personnel\Personnel.csproj">
-      <Project>{cfdccf10-bd9b-44b8-906a-c3e816f6fa5b}</Project>
-      <Name>Personnel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Structure\Structure.csproj">
-      <Project>{f024d515-6cbf-4a78-b600-4ec4b44e885f}</Project>
-      <Name>Structure</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <COMReference Include="Microsoft.Office.Core">
-      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
-      <VersionMajor>2</VersionMajor>
-      <VersionMinor>7</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-    <COMReference Include="Microsoft.Office.Interop.Outlook">
-      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
-      <VersionMajor>9</VersionMajor>
-      <VersionMinor>5</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-    <COMReference Include="stdole">
-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
-      <VersionMajor>2</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
+    <Compile Include="RepeatingSchedule.cs" />
+    <Compile Include="Schedule.cs" />
+    <Compile Include="SimpleRepeatingSchedule.cs" />
+    <Compile Include="SingleSchedule.cs" />
+    <Compile Include="WeeklySchedule.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

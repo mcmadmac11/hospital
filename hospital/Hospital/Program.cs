@@ -27,17 +27,22 @@ namespace Hospital
 
             var report = new ReportGenerator(p1, appointment.GetAppointmentInfo(), diagnosis).report;
 
-            Console.WriteLine(report.OutputPatient());
+            Console.WriteLine(report.OutputPatient().Talk("name"));
             Console.WriteLine(report.OutputDiagnosis());
-            Console.WriteLine(report.OutputAppointmentInfo());
 
             Database controller = new Database();
-
-            var reports = controller.ViewReports();
-            Console.WriteLine(reports.Count());
-            var rp = reports[0].OutputPatient();
+            controller.AddReport(report);
+            var reports = controller.reports;
+            //Console.WriteLine(reports.Count());
+            var rp = reports.OutputPatient();
+            Console.WriteLine(reports);
+            Console.WriteLine(rp);
             Console.WriteLine(rp.Talk("name"));
-
+            var rr = controller.ViewReports();
+            var rrp = rr.OutputPatient();
+            Console.WriteLine(rr);
+            Console.WriteLine(rrp);
+            Console.WriteLine(rrp.Talk("name"));
 
         
         }

@@ -10,10 +10,10 @@ namespace Storage
 {
     public class Report
     {
-        private Patient patient;
-        private Dictionary<string, string> appointmentInfo;
+        public Patient patient;
+        public Dictionary<string, string> appointmentInfo;
        // private Diagnosis diagnosis;
-       private string diagnosis;
+        public string diagnosis;
 
         public Report() { }
 
