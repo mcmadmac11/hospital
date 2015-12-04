@@ -19,30 +19,28 @@ namespace Hospital
             var personFactory = new PersonFactory();
           
 
-            var p1 = personFactory.CreatePatient("Sam", "09/02/1985");
-            var d1 = personFactory.CreateDoctor("Dr. Jim", "immortal");
+            var p1 = personFactory.CreatePatient("Liam", "09/02/1985");
+            var d1 = personFactory.CreateDoctor("Dr. Fong", "immortal");
           
-            var appointment = new Appointment("12:00", "10/5/2016", p1, "R20", d1);
+            var appointment = new Appointment();
+            appointment.Initialize("12:00", "10/5/2016", p1.Talk("name"), d1.Talk("name"));
             var diagnosis = "ebola";
 
-            var report = new ReportGenerator(p1, appointment.GetAppointmentInfo(), diagnosis).report;
-
+            var report = new Report(p1, appointment, diagnosis);
             Console.WriteLine(report.OutputPatient().Talk("name"));
             Console.WriteLine(report.OutputDiagnosis());
 
             Database controller = new Database();
-            controller.AddReport(report);
-            var reports = controller.reports;
-            //Console.WriteLine(reports.Count());
-            var rp = reports.OutputPatient();
-            Console.WriteLine(reports);
-            Console.WriteLine(rp);
-            Console.WriteLine(rp.Talk("name"));
-            var rr = controller.ViewReports();
-            var rrp = rr.OutputPatient();
-            Console.WriteLine(rr);
-            Console.WriteLine(rrp);
-            Console.WriteLine(rrp.Talk("name"));
+            var ReportXML = report.ConstructReportXML();
+            controller.AddReport(ReportXML);
+
+            var r = controller.ViewReports();
+            var newReport = r[0].ReconstructReport();
+
+            Console.WriteLine(newReport.OutputPatient().Talk("name"));
+            Console.WriteLine(report.OutputDiagnosis());
+
+
 
         
         }

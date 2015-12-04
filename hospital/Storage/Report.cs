@@ -10,28 +10,33 @@ namespace Storage
 {
     public class Report
     {
-        public Patient patient;
-        public Dictionary<string, string> appointmentInfo;
+        private Patient patient;
+        private Appointment appointment;
        // private Diagnosis diagnosis;
-        public string diagnosis;
+        private string diagnosis;
 
-        public Report() { }
-
-        public void ConstructReport(ReportGenerator limiter, Patient patient, Dictionary<string, string> appointmentInfo, string diagnosis) //replace string diagnosis with Diagnosis diagnosis when functional, uncomment out other code to replace the string code respectively
+        public Report(Patient patient, Appointment appointment, string diagnosis)
         {
             this.patient = patient;
-            this.appointmentInfo = appointmentInfo;
-            this.diagnosis = diagnosis;
+            this.appointment = appointment;
+            this.diagnosis = diagnosis; 
         }
+
+        //public void ReconstructReport(Patient patient, Appointment appointment, string diagnosis) 
+        //{
+        //    this.patient = patient;
+        //    this.appointment = appointment;
+        //    this.diagnosis = diagnosis;
+        //}
 
         public Patient OutputPatient()
         {
             return patient;
         }
 
-        public Dictionary<string, string> OutputAppointmentInfo()
+        public Appointment OutputAppointment()
         {
-            return appointmentInfo;
+            return appointment;
         }
 
         //public Diagnosis OutputDiagnosis()
@@ -41,6 +46,13 @@ namespace Storage
         public string OutputDiagnosis()
         {
             return diagnosis;
+        }
+
+        public ReportXML ConstructReportXML()
+        {
+            var report = new ReportXML();
+            report.Initialize(this);
+            return report;
         }
     }
 }

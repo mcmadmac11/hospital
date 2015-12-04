@@ -29,5 +29,17 @@ namespace Information
                ,{ "provider", null }
             };
         }
+
+        public string[] XMLOutput()
+        {
+            var insurance = new string[]
+            {
+                insuranceInfo["iD"]
+               ,insuranceInfo["groupID"]
+               ,insuranceInfo["type"]
+               ,insuranceInfo["provider"]
+            };
+            return insurance;
+        }
     }
 }

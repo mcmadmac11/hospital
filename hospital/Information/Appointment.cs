@@ -8,37 +8,19 @@ namespace Information
 {
     public class Appointment
     {
-        private string time;
-        private string date;
-        private IPerson patient;
-        private string roomNumber;
-        private IPerson doctor;
-        private Dictionary<string, string> appointmentInfo;
+        public string time;
+        public string date;
+        public string patientName;
+        public string doctorName;
 
-        public Appointment(string time, string date, IPerson patient, string roomNumber, IPerson doctor)
+        public Appointment() { }
+
+        public void Initialize(string time, string date, string patientName, string doctorName)
         {
             this.time = time;
             this.date = date;
-            this.patient = patient;
-            this.roomNumber = roomNumber;
-            this.doctor = doctor;
-            SetAppointmentInfo();
-        }
-
-        public Dictionary<string, string> GetAppointmentInfo()
-        {
-            return appointmentInfo;
-        }
-
-        private void SetAppointmentInfo()
-        {
-            appointmentInfo = new Dictionary<string, string>
-            {
-                { "time", time }
-               ,{ "date", date }
-               ,{ "room", roomNumber }
-               ,{ "doctor", doctor.Talk("name") }
-            };
+            this.patientName = patientName;
+            this.doctorName = doctorName;
         }
     }
 }
