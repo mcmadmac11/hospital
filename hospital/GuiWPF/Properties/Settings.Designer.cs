@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WPFgui.Properties
+namespace GuiWPF.Properties
 {
 
 

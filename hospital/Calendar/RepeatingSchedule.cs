@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Calendar
 {
-    class RepeatingSchedule
+    public abstract class RepeatingSchedule : Schedule
     {
+        public Period schedulingRange { get; set; }
+        protected bool DateIsInPeriod(DateTime date)
+        {
+            return date >= schedulingRange.start && date <= schedulingRange.end;
+        }
     }
 }

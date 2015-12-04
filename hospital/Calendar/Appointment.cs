@@ -8,5 +8,7 @@ namespace Calendar
 {
     public class Appointment
     {
+        public DateTime time { get; set; }
+        public string name {get; set; }
     }
 }

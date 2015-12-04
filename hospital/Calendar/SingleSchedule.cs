@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Calendar
 {
-    class SingleSchedule
+    public class SingleSchedule : Schedule
     {
+        public DateTime date { get; set; }
+
+        public override bool OccursOnDate(DateTime date)
+        {
+            return date.Date == date;
+        }
     }
 }

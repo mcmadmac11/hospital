@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace Calendar
 {
-    class WeeklySchedule
+    public class WeeklySchedule : RepeatingSchedule
     {
-        public WeeklySchedule()
-        { }
+        List<DayOfWeek> days;
+        public void SetDays(IEnumerable<DayOfWeek> days)
+        {
+            days = days.Distinct().ToList();
+        }
+
+        public override bool OccursOnDate(DateTime date)
+        {
+            return DateIsInPeriod(date) && days.Contains(date.DayOfWeek);
+        }
     }
 }

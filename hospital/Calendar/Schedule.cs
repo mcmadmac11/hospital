@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calendar
 {
-    public class Schedule
+    public abstract class Schedule
     {
+        public TimeSpan timeOfDay { get; set; }
+        public string name { get; set; }
+        
+        public abstract bool OccursOnDate(DateTime date);
     }
 }
