@@ -12,7 +12,7 @@ namespace Calendar
 
         public override bool OccursOnDate(DateTime date)
         {
-            return date.Date == date;
+            return this.date == date;
         }
     }
 }

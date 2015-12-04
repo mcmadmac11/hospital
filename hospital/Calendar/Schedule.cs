@@ -10,6 +10,7 @@ namespace Calendar
     {
         public TimeSpan timeOfDay { get; set; }
         public string name { get; set; }
+        public string doctorName { get; set; }
         
         public abstract bool OccursOnDate(DateTime date);
     }

@@ -34,8 +34,10 @@ namespace Calendar
             Appointment appointment = new Appointment
             {
                 name = schedule.name
+               ,doctorName = schedule.doctorName
                ,time = checkDate.Add(schedule.timeOfDay)
             };
+            return appointment;
         }
     }
 }

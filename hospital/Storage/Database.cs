@@ -35,7 +35,7 @@ namespace Storage
             UpdateDatabase();
         }
 
-        private void UpdateDatabase()
+        private void UpdateReports()
         {
             using (var file = new StreamWriter("C:\\Users\\chris\\github\\hospital\\Hospital\\Hospital\\database.xml"))
             {
@@ -45,7 +45,17 @@ namespace Storage
             }
         }
 
+        private void UpdateDatabase()
+        {
+           UpdateReports();
+        }
+
         private void ReadRefresh()
+        {
+            ReadReports();
+        }
+
+        private void ReadReports()
         {
             using (var file = new StreamReader("C:\\Users\\chris\\github\\hospital\\Hospital\\Hospital\\database.xml"))
             {

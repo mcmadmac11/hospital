@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Calendar\Calendar.csproj">
+      <Project>{a4fd3cb4-ab6e-4c3e-b531-6fd392ed942a}</Project>
+      <Name>Calendar</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Information\Information.csproj">
       <Project>{aaad7a64-810e-4c00-9495-9519db77af8f}</Project>
       <Name>Information</Name>
