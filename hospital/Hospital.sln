@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personnel", "Personnel\Personnel.csproj", "{CFDCCF10-BD9B-44B8-906A-C3E816F6FA5B}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendar", "Calendar\Calendar.csproj", "{A4FD3CB4-AB6E-4C3E-B531-6FD392ED942A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsProgram", "WinFormsProgram\WinFormsProgram.csproj", "{C72F1E33-66B3-4CD9-BD30-B3C7B66930D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuiWPF", "GuiWPF\GuiWPF.csproj", "{4A4E31D7-057C-4E36-8337-223767DD31FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{C72F1E33-66B3-4CD9-BD30-B3C7B66930D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C72F1E33-66B3-4CD9-BD30-B3C7B66930D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C72F1E33-66B3-4CD9-BD30-B3C7B66930D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A4E31D7-057C-4E36-8337-223767DD31FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4E31D7-057C-4E36-8337-223767DD31FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4E31D7-057C-4E36-8337-223767DD31FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4E31D7-057C-4E36-8337-223767DD31FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

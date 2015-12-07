@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
+﻿using System.Collections.Generic;
 using System.Xml.Serialization;
 using System.IO;
 using Calendar;
-using System.Reflection;
-using System.Collections;
-
 
 namespace Storage
 {
@@ -40,7 +32,7 @@ namespace Storage
 
         private void UpdateReports()
         {
-            using (var file = new StreamWriter("C:\\Users\\phantom\\github\\hospital\\Hospital\\Hospital\\database.xml")) //change location to location on local machine running program
+            using (var file = new StreamWriter("C:\\Users\\chris\\github\\hospital\\Hospital\\Storage\\database.xml")) //change location to location on local machine running program
             {
                 serializer = new XmlSerializer(reports.GetType());
                 serializer.Serialize(file, reports);
@@ -50,7 +42,7 @@ namespace Storage
 
         private void UpdateSchedule()
         {
-            using (var file = new StreamWriter("C:\\Users\\phantom\\github\\hospital\\Hospital\\Hospital\\calendar.xml")) //change location to location on local machine running program
+            using (var file = new StreamWriter("C:\\Users\\chris\\github\\hospital\\Hospital\\Storage\\calendar.xml")) //change location to location on local machine running program
             {
                 serializer = new XmlSerializer(schedule.GetType());
                 serializer.Serialize(file, schedule);
@@ -72,7 +64,7 @@ namespace Storage
 
         private void ReadReports()
         {
-            using (var file = new StreamReader("C:\\Users\\phantom\\github\\hospital\\Hospital\\Hospital\\database.xml")) //change location to location on local machine running program
+            using (var file = new StreamReader("C:\\Users\\chris\\github\\hospital\\Hospital\\Storage\\database.xml")) //change location to location on local machine running program
             {
                 reader = new XmlSerializer(typeof(List<ReportXML>));
                 if (file.ReadLine() != null)
@@ -84,7 +76,7 @@ namespace Storage
         
         private void ReadSchedule()
         {
-            using (var file = new StreamReader("C:\\Users\\phantom\\github\\hospital\\Hospital\\Hospital\\calendar.xml")) //change location to location on local machine running program
+            using (var file = new StreamReader("C:\\Users\\chris\\github\\hospital\\Hospital\\Storage\\calendar.xml")) //change location to location on local machine running program
             {
                 reader = new XmlSerializer(typeof(List<Appointment>));
                 schedule = (List<Appointment>)reader.Deserialize(file);

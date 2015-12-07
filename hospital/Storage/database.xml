@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfReportXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ReportXML>
+    <appointment>
+      <time>12:00</time>
+      <date>10/5/2016</date>
+      <patientName>Sam</patientName>
+      <doctorName>Dr. Jim</doctorName>
+    </appointment>
+    <diagnosis>ebola</diagnosis>
+    <patientInfo>
+      <ArrayOfString>
+        <string>Sam</string>
+      </ArrayOfString>
+      <ArrayOfString>
+        <string>09/02/1985</string>
+      </ArrayOfString>
+      <ArrayOfString>
+        <string xsi:nil="true" />
+      </ArrayOfString>
+      <ArrayOfString>
+        <string xsi:nil="true" />
+      </ArrayOfString>
+    </patientInfo>
+  </ReportXML>
+  <ReportXML>
+    <appointment>
+      <time>12:00</time>
+      <date>10/5/2016</date>
+      <patientName>Liam</patientName>
+      <doctorName>Dr. Fong</doctorName>
+    </appointment>
+    <diagnosis>ebola</diagnosis>
+    <patientInfo>
+      <ArrayOfString>
+        <string>Liam</string>
+      </ArrayOfString>
+      <ArrayOfString>
+        <string>09/02/1985</string>
+      </ArrayOfString>
+      <ArrayOfString>
+        <string xsi:nil="true" />
+      </ArrayOfString>
+      <ArrayOfString>
+        <string xsi:nil="true" />
+      </ArrayOfString>
+    </patientInfo>
+  </ReportXML>
+  <ReportXML>
+    <appointment>
+      <time>12:00</time>
+      <date>10/5/2016</date>
+      <patientName>Kurt</patientName>
+      <doctorName>Dr. Kim</doctorName>
+    </appointment>
+    <diagnosis>ebola</diagnosis>
+    <patientInfo>
+      <ArrayOfString>
+        <string>Kurt</string>
+      </ArrayOfString>
+      <ArrayOfString>
+        <string>09/03/1985</string>
+      </ArrayOfString>
+      <ArrayOfString>
+        <string xsi:nil="true" />
+      </ArrayOfString>
+      <ArrayOfString>
+        <string xsi:nil="true" />
+      </ArrayOfString>
+    </patientInfo>
+  </ReportXML>
+</ArrayOfReportXML>

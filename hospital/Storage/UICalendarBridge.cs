@@ -20,8 +20,10 @@ namespace Storage
             period = new Period(new DateTime(2010, 12, 1), new DateTime(2018, 1, 1));
         }
 
-        public void ScheduleSingleAppointment(string name, string doctorName, TimeSpan timeOfDay, DateTime date)
+        public void ScheduleSingleAppointment(string name, string doctorName, string time, string sDate)
         {
+            TimeSpan timeOfDay = TimeSpan.Parse(time);
+            DateTime date = DateTime.Parse(sDate);
             Schedule[] singleSchedule = new Schedule[] { new SingleSchedule { name = name, doctorName = doctorName, timeOfDay= timeOfDay, date = date } };
             var appointment = CreateAppointment(singleSchedule)[0];
             controller.schedule.Add(appointment);

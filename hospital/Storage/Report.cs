@@ -22,13 +22,6 @@ namespace Storage
             this.diagnosis = diagnosis; 
         }
 
-        //public void ReconstructReport(Patient patient, Appointment appointment, string diagnosis) 
-        //{
-        //    this.patient = patient;
-        //    this.appointment = appointment;
-        //    this.diagnosis = diagnosis;
-        //}
-
         public Patient OutputPatient()
         {
             return patient;
