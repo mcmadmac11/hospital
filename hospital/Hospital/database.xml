@@ -46,4 +46,27 @@
       </ArrayOfString>
     </patientInfo>
   </ReportXML>
+  <ReportXML>
+    <appointment>
+      <time>12:00</time>
+      <date>10/5/2016</date>
+      <patientName>Kurt</patientName>
+      <doctorName>Dr. Kim</doctorName>
+    </appointment>
+    <diagnosis>ebola</diagnosis>
+    <patientInfo>
+      <ArrayOfString>
+        <string>Kurt</string>
+      </ArrayOfString>
+      <ArrayOfString>
+        <string>09/03/1985</string>
+      </ArrayOfString>
+      <ArrayOfString>
+        <string xsi:nil="true" />
+      </ArrayOfString>
+      <ArrayOfString>
+        <string xsi:nil="true" />
+      </ArrayOfString>
+    </patientInfo>
+  </ReportXML>
 </ArrayOfReportXML>

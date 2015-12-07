@@ -15,15 +15,17 @@ namespace Hospital
     {
         static void Main(string[] args)
         {
+            //report writing tests
+
             //Console.WriteLine("No bugs!");
             //WaitingRoom room = new WaitingRoom();
             //var personFactory = new PersonFactory();
-          
 
-            //var p1 = personFactory.CreatePatient("Liam", "09/02/1985");
-            //var d1 = personFactory.CreateDoctor("Dr. Fong", "immortal");
-          
-            //var appointment = new Appointment();
+
+            //var p1 = personFactory.CreatePatient("Kurt", "09/03/1985");
+            //var d1 = personFactory.CreateDoctor("Dr. Kim", "immortal");
+
+            //var appointment = new Information.Appointment();
             //appointment.Initialize("12:00", "10/5/2016", p1.Talk("name"), d1.Talk("name"));
             //var diagnosis = "ebola";
 
@@ -41,19 +43,20 @@ namespace Hospital
             //Console.WriteLine(newReport.OutputPatient().Talk("name"));
             //Console.WriteLine(report.OutputDiagnosis());
 
-            var single1 = new SingleSchedule {name = "Bob", doctorName = "Dr. John", timeOfDay= new TimeSpan(9, 20, 0), date = new DateTime(2012, 5, 8) };
-            var schedules = new List<Schedule> { single1 };
 
-            CalendarGenerator generator = new CalendarGenerator();
-            Period period = new Period (new DateTime(2012, 5, 1), new DateTime(2012, 6, 30));
-            var appointments = generator.GenerateCalendar(period, schedules);
+            //calendar writing tests
+            var bridge = new UICalendarBridge();
+            bridge.ScheduleSingleAppointment("Simon", "Dr. Belmont", new TimeSpan(13, 20, 0), new DateTime(2015, 12, 8) );
+
+            //Period period = new Period (new DateTime(2012, 5, 1), new DateTime(2012, 5, 9));
+            var appointments = bridge.GetCalendar();
 
             foreach (var appointment in appointments)
             {
                 Console.WriteLine("{0} | {1} with {2}", appointment.time.ToString("yyyy-MM-dd HH:mm"), appointment.name, appointment.doctorName);
             }
 
-        
+
         }
     }
 }
