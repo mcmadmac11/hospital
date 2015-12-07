@@ -10,9 +10,10 @@ using Calendar;
 using System.Reflection;
 using System.Collections;
 
+
 namespace Storage
 {
-    public class Database
+    public class Database 
     {
         private XmlSerializer serializer;
         private XmlSerializer reader;
@@ -34,7 +35,6 @@ namespace Storage
         {
             ReadRefresh();
             reports.Add(report);
-            Console.WriteLine("added report");
             UpdateDatabase();
         }
 
@@ -75,7 +75,10 @@ namespace Storage
             using (var file = new StreamReader("C:\\Users\\phantom\\github\\hospital\\Hospital\\Hospital\\database.xml")) //change location to location on local machine running program
             {
                 reader = new XmlSerializer(typeof(List<ReportXML>));
-                reports = (List<ReportXML>)reader.Deserialize(file);
+                if (file.ReadLine() != null)
+                    reports = (List<ReportXML>)reader.Deserialize(file);
+                else
+                    reports = new List<ReportXML>();
             }
         }
         

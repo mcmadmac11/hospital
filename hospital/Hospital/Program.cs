@@ -43,6 +43,11 @@ namespace Hospital
             //Console.WriteLine(newReport.OutputPatient().Talk("name"));
             //Console.WriteLine(report.OutputDiagnosis());
 
+<<<<<<< HEAD
+=======
+            var single1 = new SingleSchedule {name = "Jimbo", doctorName = "Dr. Feelgood", timeOfDay= new TimeSpan(9, 20, 0), date = new DateTime(2012, 5, 8) };
+            var schedules = new List<Schedule> { single1 };
+>>>>>>> 45d1f173ef9a54507e527bde95975c14b3d76af7
 
             //calendar writing tests
             var bridge = new UICalendarBridge();
