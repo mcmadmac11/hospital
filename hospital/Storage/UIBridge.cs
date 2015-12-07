@@ -9,15 +9,16 @@ namespace Storage
 {
     public class UIBridge
     {
-        private string name;
-        private string doctorName;
+        public string name { get; private set; }
+        public string doctorName { get; private set; }                                  // private string name;
+        //private string doctorName;
         private DateTime date; //DateTime(2015, 12, 4)
         private TimeSpan timeOfDay; // TimeSpan(9, 20, 0)
 
         public UIBridge(string name, string doctorName, string date, string timeOfDay)
         {
-            this.name = name;
-            this.doctorName = doctorName;
+           // this.name = name;
+            //this.doctorName = doctorName;
             this.date = DateTime.Parse(date);
             this.timeOfDay = TimeSpan.Parse(timeOfDay);
         }

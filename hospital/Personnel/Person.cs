@@ -42,7 +42,7 @@ namespace Personnel
             }
         }
 
-        private void SetName(string name)
+        public void SetName(string name)
         {
             this.name = name;
         }

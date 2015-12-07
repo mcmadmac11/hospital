@@ -7,9 +7,10 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 
+
 namespace Storage
 {
-    public class Database
+    public class Database 
     {
         private XmlSerializer serializer;
         private XmlSerializer reader;
@@ -31,13 +32,12 @@ namespace Storage
         {
             ReadRefresh();
             reports.Add(report);
-            Console.WriteLine("added report");
             UpdateDatabase();
         }
 
         private void UpdateReports()
         {
-            using (var file = new StreamWriter("C:\\Users\\chris\\github\\hospital\\Hospital\\Hospital\\database.xml"))
+            using (var file = new StreamWriter("database.xml"))
             {
                 serializer = new XmlSerializer(reports.GetType());
                 serializer.Serialize(file, reports);
@@ -57,10 +57,15 @@ namespace Storage
 
         private void ReadReports()
         {
-            using (var file = new StreamReader("C:\\Users\\chris\\github\\hospital\\Hospital\\Hospital\\database.xml"))
+            using (
+                
+                var file = new StreamReader("database.xml"))
             {
                 reader = new XmlSerializer(typeof(List<ReportXML>));
-                reports = (List<ReportXML>)reader.Deserialize(file);
+                if (file.ReadLine() != null)
+                    reports = (List<ReportXML>)reader.Deserialize(file);
+                else
+                    reports = new List<ReportXML>();
             }
         }
     }

@@ -41,7 +41,7 @@ namespace Hospital
             //Console.WriteLine(newReport.OutputPatient().Talk("name"));
             //Console.WriteLine(report.OutputDiagnosis());
 
-            var single1 = new SingleSchedule {name = "Bob", doctorName = "Dr. John", timeOfDay= new TimeSpan(9, 20, 0), date = new DateTime(2012, 5, 8) };
+            var single1 = new SingleSchedule {name = "Jimbo", doctorName = "Dr. Feelgood", timeOfDay= new TimeSpan(9, 20, 0), date = new DateTime(2012, 5, 8) };
             var schedules = new List<Schedule> { single1 };
 
             CalendarGenerator generator = new CalendarGenerator();
