@@ -8,7 +8,7 @@ namespace Calendar
 {
     public class SingleSchedule : Schedule
     {
-        public DateTime date { get; set; }
+        public DateTime date;
 
         public override bool OccursOnDate(DateTime date)
         {

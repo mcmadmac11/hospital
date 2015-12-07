@@ -8,9 +8,9 @@ namespace Calendar
 {
     public abstract class Schedule
     {
-        public TimeSpan timeOfDay { get; set; }
-        public string name { get; set; }
-        public string doctorName { get; set; }
+        public TimeSpan timeOfDay;
+        public string name;
+        public string doctorName;
         
         public abstract bool OccursOnDate(DateTime date);
     }

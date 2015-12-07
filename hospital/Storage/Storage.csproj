@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ReportXML.cs" />
-    <Compile Include="UIBridge.cs" />
+    <Compile Include="UICalendarBridge.cs" />
     <None Include="OutlookCalendar" />
     <Compile Include="Database.cs" />
     <Compile Include="Report.cs" />
